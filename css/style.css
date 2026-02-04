@@ -1,0 +1,67 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #1db95433, #121212);
+}
+
+.search-box {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1db954;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#app-container {
+    display: grid;
+    /* This creates the responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.album-card {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+    transform: scale(1.05);
+}
+
+.album-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.album-title {
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.album-year {
+    color: #b3b3b3;
+    font-size: 0.9em;
+}
